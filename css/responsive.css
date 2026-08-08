@@ -1,0 +1,87 @@
+
+/*350px*/
+@media (max-width: 1300px) {
+.container .row .box_of_burger{
+    display: none;
+}
+
+.container .row .box_of_pizza{
+    display: none !important;
+}
+
+.container .row .box_of_text_2 {
+    padding-inline: 30px;
+}
+
+
+
+form{
+    padding-inline: 10px;
+}
+
+.padding{
+    padding-inline: 2px;
+}
+}
+/*450px*/
+@media (min-width: 371px) and (max-width: 1300px) {
+    
+.container .row .box_of_text_2 {
+    padding-inline: 50px;
+}
+
+
+form{
+    padding-inline: 20px;
+}
+
+
+.padding{
+    padding-inline: 20px;
+}
+}
+
+/*650px*/
+@media (min-width: 577px) and (max-width: 1300px) {
+    
+
+}
+
+/*850px*/
+@media (min-width: 768px) and (max-width: 1300px) {
+    
+.container .row .box_of_burger{
+    display: flex;
+}
+
+
+.container .row .box_of_pizza{
+    display: flex !important;
+}
+
+
+.container .row .box_of_text_2 {
+    padding:0;
+}
+
+
+.delivery_man{
+    display: none;
+}
+}
+
+/*1050px*/
+@media (min-width: 992px) and (max-width: 1300px) {
+    
+.Get_Your_Meal{
+padding-inline: 100px;
+}
+
+}
+
+/*1300px*/
+@media (min-width: 1200px) and (max-width: 1300px) {
+
+.delivery_man{
+    display: flex;
+}}

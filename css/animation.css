@@ -1,0 +1,113 @@
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(30px);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes infiniteSlider {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(-1400px);
+    }
+}
+
+@keyframes spin_2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes motorcycle {
+
+    /* يظهر من الشمال */
+    0% {
+        left: -300px;
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+
+    /* يدخل خلال ثانية */
+    14% {
+        left: -50px;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    /* واقف وبيتهز */
+    14% {
+        transform: translateY(-6px) rotate(-1deg);
+    }
+
+    16% {
+        transform: translateY(6px) rotate(1deg);
+    }
+
+    18% {
+        transform: translateY(-6px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translateY(6px) rotate(1deg);
+    }
+
+    22% {
+        transform: translateY(-6px) rotate(-1deg);
+    }
+
+    25% {
+        transform: rotate(-60deg) translateY(6px);
+    }
+
+    29% {
+        transform: rotate(-60deg) translateY(-6px);
+    }
+
+    30% {
+        left: -50px;
+        transform: rotate(-60deg) translateY(6px);
+    }
+
+    85% {
+        left: 110vw;
+        opacity: 1;
+        transform: rotate(-60deg) translateY(-6px);
+    }
+
+    86% {
+        left: 110vw;
+        opacity: 0;
+        transform: rotate(-60deg) translateY(6px);
+    }
+
+    87% {
+        left: -300px;
+        opacity: 0;
+    }
+
+    100% {
+        left: -50px;
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+}
