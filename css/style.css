@@ -75,7 +75,7 @@ button:has(+ .offcanvas.show) .sp_3 {
 .the_header button i:hover{
     color: #F1B601;
     transform: rotateZ(360deg);
-}
+} 
 
 .the_body .links{
     background-color:transparent;
@@ -92,8 +92,13 @@ button:has(+ .offcanvas.show) .sp_3 {
     text-decoration: none;
     font-size: 20px;
     color: #fff;
-    transition-duration: 0.3s;
+    transition-duration: 0.3s ;
     width: 100%;
+}
+
+
+.the_body .links a i{
+    transition-duration: 0.5s;
 }
 
 .the_body .links a:hover{
@@ -118,7 +123,7 @@ button:has(+ .offcanvas.show) .sp_3 {
     align-items: center;
     background-color: #fff;
     border-radius: 10px;
-    transition-duration: 0.2s;
+    transition-duration: 0.2s !important;
 }
 
 .the_body .icons i:nth-child(1) {
@@ -759,12 +764,16 @@ section{
 
 .section .container .row .photo{
     height: 300px;
-    background-image: url("../imgs/header_photos/about-img-2b02e5cc.jpg");
+    background-image: url("../imgs/header_photos/about-img-2b02e5cc.jpg") !important;
     border-radius: 15px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .section .container .row .photo p{
@@ -892,7 +901,6 @@ section{
     padding-block: 100px;
 }
 
-
 .vedios_container video{
     position: absolute;
     inset: 0;
@@ -902,7 +910,6 @@ section{
     z-index: -1;
     filter: brightness(0.3);
 }
-
 
 .vedios_container .container .box{
     display: flex;
@@ -937,11 +944,6 @@ section{
     margin-top: 50px;
 }
 
-
-
-
-
-/* الحالة الأساسية: الأيقونات مخفية ناحية الشمال */
 .offcanvas .icons i {
     opacity: 0;
     transform: translateX(-80px);
@@ -950,13 +952,11 @@ section{
         transform 0.5s ease;
 }
 
-/* لما الـ sidebar يفتح */
 .offcanvas.show .icons i {
     opacity: 1;
     transform: translateX(0);
 }
 
-/* كل واحدة تدخل بعد اللي قبلها */
 .offcanvas.show .icons i:nth-child(1) {
     transition-delay: 0.1s;
 }
@@ -1083,12 +1083,12 @@ section{
 }
 
 .offcanvas-body{
-    width: fit-content !important;
+    
     background: transparent;
 }
 
 .offcanvas{
-    width: fit-content !important;
+    width: 350px;
     background: transparent;
     border: none !important;
 }
@@ -1366,6 +1366,44 @@ form textarea{
     resize: none;
     padding: 8px;
     position: relative;
+}
+
+form button {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    margin-block: 15px;
+    padding-inline: 8px;
+    padding-block: 3px;
+    background: transparent;
+    border: var(--secondary_color) 2px solid;
+    color: var(--secondary_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s ease;
+}
+
+form button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--secondary_color);
+    transform: translateY(-100%);
+    transition: transform 0.4s ease;
+    z-index: -1;
+}
+
+form button:hover::before {
+    transform: translateY(0);
+}
+
+form button:hover {
+    color: #000;
 }
 
 .delivery_man{
