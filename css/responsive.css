@@ -22,6 +22,11 @@ form{
 .padding{
     padding-inline: 2px;
 }
+
+
+.delivery_man{
+    display: none;
+}
 }
 /*450px*/
 @media (min-width: 371px) and (max-width: 1300px) {
@@ -77,11 +82,13 @@ form{
 padding-inline: 100px;
 }
 
+.delivery_man{
+    display: flex;
+}
+
 }
 
 /*1300px*/
 @media (min-width: 1200px) and (max-width: 1300px) {
 
-.delivery_man{
-    display: flex;
-}}
+}
